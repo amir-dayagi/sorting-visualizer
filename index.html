@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+    </style>
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="screen">
+      <header>
+        <h1 id="title">Sorting Algorithm Visualizer</h1>
+        <nav>
+          <button id="resetBtn">Reset!</button>
+          <button id="sortBtn">Sort!</button>
+          <div class="sliderContainer sliderEnabled">
+            <label id="lengthLabel">Length</label>
+            <input
+              type="range"
+              min="50"
+              max="150"
+              step="5"
+              value="75"
+              name="Length"
+              id="lengthSlider"
+            />
+          </div>
+          <div class="select">
+            <select name="typeCombo" id="typeCombo">
+              <option value="bubble">Bubble Sort</option>
+              <option value="merge">Merge Sort</option>
+              <option value="quick">Quick Sort</option>
+            </select>
+          </div>
+        </nav>
+      </header>
+      <div id="container"></div>
+    </section>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
