@@ -9,11 +9,11 @@ From the root directory of the repository, run the following command:
 
 Mac:
 ```
-python3 -m http.server
+$ python3 -m http.server
 ```
 Windows:
 ```
-python -m http.server
+$ python -m http.server
 ```
 Upon running the command, the following should appear:
 ```
